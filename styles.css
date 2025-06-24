@@ -1,0 +1,27 @@
+#outer-container {
+  display: Flex;
+  justify-content: center;
+}
+#container {
+  width: 960px;
+  height: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid, black, 5px;
+}
+
+#size-button-container {
+  display: Flex;
+  justify-content: center;
+}
+
+#size-button {
+  height: 50px;
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+#size-button:active {
+  background-color: blue;
+}
