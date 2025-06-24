@@ -9,7 +9,6 @@ const increaseBoxAmount = function (size) {
   for (let i = 0; i < size * size; i++) {
     const boxWidthHeight = 960 / size;
     let box = document.createElement("div");
-    box.style.border = "solid, red, 1px";
     box.style.height = boxWidthHeight + "px";
     box.style.width = boxWidthHeight + "px";
     box.style.boxSizing = "border-box";
