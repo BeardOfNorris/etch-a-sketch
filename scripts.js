@@ -30,3 +30,10 @@ changeSizeButton.addEventListener("click", () => {
   document.getElementById("container").innerHTML = "";
   increaseBoxAmount(size);
 });
+
+const clearColor = document.getElementById("clear-color");
+clearColor.addEventListener("click", () => {
+  document.querySelectorAll("#container div").forEach((div) => {
+    div.style.backgroundColor = "white";
+  });
+});
