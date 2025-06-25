@@ -7,7 +7,7 @@ function getRandomRgbColor() {
 
 const increaseBoxAmount = function (size) {
   for (let i = 0; i < size * size; i++) {
-    const boxWidthHeight = 960 / size;
+    const boxWidthHeight = 800 / size;
     let box = document.createElement("div");
     box.style.height = boxWidthHeight + "px";
     box.style.width = boxWidthHeight + "px";
@@ -23,6 +23,10 @@ const increaseBoxAmount = function (size) {
 const changeSizeButton = document.getElementById("size-button");
 changeSizeButton.addEventListener("click", () => {
   const size = prompt("Enter your desired grid size");
+  const sizeConverted = Number(size);
+  if (Number.isNaN(sizeConverted) || sizeConverted < 1 || sizeConverted > 100) {
+    alert("Please provide a number between 1-100");
+  }
   document.getElementById("container").innerHTML = "";
   increaseBoxAmount(size);
 });

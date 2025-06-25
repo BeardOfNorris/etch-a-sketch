@@ -1,10 +1,15 @@
+@font-face {
+  font-family: "GlossySheen";
+  src: url(./fonts/GlossySheenShadow-gxJP3.ttf);
+}
+
 #outer-container {
   display: Flex;
   justify-content: center;
 }
 #container {
-  width: 960px;
-  height: 960px;
+  width: 800px;
+  height: 800px;
   display: flex;
   flex-wrap: wrap;
   border: solid, black, 5px;
@@ -13,6 +18,7 @@
 #size-button-container {
   display: Flex;
   justify-content: center;
+  gap: 5px;
 }
 
 #size-button {
@@ -20,8 +26,19 @@
   width: 200px;
   margin-bottom: 10px;
   border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 1000;
+  margin-top: 5px;
 }
 
 #size-button:active {
   background-color: blue;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  font-family: "GlossySheen";
+  font-size: 50px;
 }
