@@ -5,7 +5,7 @@ function getRandomRgbColor() {
   return `rgb(${r},${g},${b})`;
 }
 
-const increaseBoxAmount = function (size) {
+const createGrid = function (size) {
   for (let i = 0; i < size * size; i++) {
     const boxWidthHeight = 800 / size;
     let box = document.createElement("div");
@@ -28,7 +28,7 @@ changeSizeButton.addEventListener("click", () => {
     alert("Please provide a number between 1-100");
   }
   document.getElementById("container").innerHTML = "";
-  increaseBoxAmount(size);
+  createGrid(size);
 });
 
 const clearColor = document.getElementById("clear-color");
